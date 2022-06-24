@@ -1,6 +1,43 @@
+body {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  color: wheat;
+  padding: 0 2em;
+  margin-bottom: 5em;
+  border-bottom: 1px solid white;
+}
+
 .canvas {
-  width: 800px;
-  height: 800px;
-  background-color: lightblue;
   position: relative;
+  background-color: black;
+  box-sizing: border-box;
+  border-right: 1px dashed #f93535;
+  border-left: 1px dashed #f93535;
+  margin: 0 auto;
+}
+
+.spaceship {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: #fe3636;
+  background: url(https://cdn.iconscout.com/icon/premium/png-256-thumb/spaceship-2511686-2103219.png);
+  background-size: contain;
+  z-index: 10;
+}
+
+.platform {
+  width: 100px;
+  height: 10px;
+  /* background-image: url('platform.png'); */
+  background-color: #2669df;
+  position: absolute;
 }
